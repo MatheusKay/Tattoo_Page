@@ -1,0 +1,31 @@
+<section>
+  <div class="card">
+    <div class="card_pergunta">
+      <h3 class="cinzel_title">
+        Como posso agendar uma tatuagem?
+      </h3>
+      <button class="card_pergunta_button" (click)="toggle()">
+        <ng-container *ngIf="isToggled; else notToggled">
+          <img src="../../../assets/images/vetor-menos.svg" alt="">
+        </ng-container>
+        <ng-template #notToggled>
+          <img src="../../../assets/images/vetor-mais.svg" alt="">
+        </ng-template>
+      </button>
+    </div>
+    <div>
+      <p class="roboto_text card_resposta" *ngIf="isToggled">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+        laboriosam saepe quibusdam magni reiciendis consequatur sequi
+        perspiciatis ex esse rem repellat mollitia deleniti vero maxime.
+        Amet odio dignissimos adipisci et.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+        laboriosam saepe quibusdam magni reiciendis consequatur sequi
+        perspiciatis ex esse rem repellat mollitia deleniti vero maxime.
+        Amet odio dignissimos adipisci et.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+        laboriosam saepe quibusdam magni reiciendis consequatur sequi
+        perspiciatis ex esse rem repellat mollitia deleniti vero maxime.
+        Amet odio dignissimos adipisci et.
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+.faq_container {
+  margin-top: 10%;
+  margin-bottom: 20%;
+
+  h2 {
+    margin-bottom: 2em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faq_container {
+    margin-top: 12em;
+
+    h2 {
+      font-size: 1em;
+    }
+  }
+}

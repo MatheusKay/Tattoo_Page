@@ -1,0 +1,18 @@
+<section class="carousel_container">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+    @for ( slide of slides ; track slide.name) {
+      <div ngxSlickItem class="slide carousel_item">
+        <div class="carousel_item_image">
+          <img src="{{ slide.img }}" alt="">
+          <div class="carousel_item_image_black"></div>
+        </div>
+        <h3 class="cinzel_title destaque_title">{{ slide.name }}</h3>
+        <span class="roboto_text">{{ slide.work }}</span>
+        <div class="carousel_item_links">
+          <img src="../../../assets/images/vetor-WhatsApp.svg" alt="">
+          <img src="../../../assets/images/vetor-Instagram.svg" alt="">
+        </div>
+      </div>
+    }
+  </ngx-slick-carousel>
+</section>
