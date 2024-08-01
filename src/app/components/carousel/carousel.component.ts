@@ -64,6 +64,14 @@ export class CarouselComponent {
           arrows: false,
           variableWidth: false
         }
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 2,
+          variableWidth: false,
+          arrows: false
+        }
       }
     ]
   }

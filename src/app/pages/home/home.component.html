@@ -3,8 +3,12 @@
     <h2 class="cinzel_title"><span class="destaque_title">New Black Studio</span> Tattoo</h2>
     <h1 class="cinzel_title destaque_title">Arte e qualidade em cada traço</h1>
     <div>
-      <button class="home_button home_button_none roboto_text">Agende agora</button>
-      <button class="home_button roboto_text">Ver galeria</button>
+      <button class="home_button home_button_none roboto_text">
+        <a href="https://wa.me/" target="_blank">Agende agora</a>
+      </button>
+      <button class="home_button roboto_text">
+        <a (click)="scrollSection($event, 4)" href="#galeria">Ver galeria</a>
+      </button>
     </div>
   </section>
 </main>

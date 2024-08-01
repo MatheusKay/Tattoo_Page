@@ -1,6 +1,6 @@
-<form class="form" action="">
-  <input class="form_campo roboto_text" type="text" placeholder="Nome">
-  <input class="form_campo roboto_text" type="tel" placeholder="Telefone">
-  <textarea class="form_campo roboto_text" name="" id="" placeholder="Mensagem"></textarea>
-  <button class="form_button" type="submit">Enviar agora</button>
+<form class="form" [formGroup]="form" (ngSubmit)="onSubmit()" action="">
+  <input formControlName="name" class="form_campo roboto_text" type="text" placeholder="Nome">
+  <input formControlName="cel" class="form_campo roboto_text" type="tel" placeholder="Telefone">
+  <textarea formControlName="mensage" class="form_campo roboto_text" name="" id="" placeholder="Mensagem"></textarea>
+  <button [disabled]="form.invalid" class="form_button" type="submit">Enviar agora</button>
 </form>

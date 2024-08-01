@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card_pergunta">
       <h3 class="cinzel_title">
-        Como posso agendar uma tatuagem?
+        {{ quest.quest }}
       </h3>
       <button class="card_pergunta_button" (click)="toggle()">
         <ng-container *ngIf="isToggled; else notToggled">
@@ -15,16 +15,7 @@
     </div>
     <div>
       <p class="roboto_text card_resposta" *ngIf="isToggled">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
-        laboriosam saepe quibusdam magni reiciendis consequatur sequi
-        perspiciatis ex esse rem repellat mollitia deleniti vero maxime.
-        Amet odio dignissimos adipisci et.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
-        laboriosam saepe quibusdam magni reiciendis consequatur sequi
-        perspiciatis ex esse rem repellat mollitia deleniti vero maxime.
-        Amet odio dignissimos adipisci et.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
-        laboriosam saepe quibusdam magni reiciendis consequatur sequi
-        perspiciatis ex esse rem repellat mollitia deleniti vero maxime.
-        Amet odio dignissimos adipisci et.
+        {{ quest.response }}
       </p>
     </div>
   </div>

@@ -1,31 +1,36 @@
 <header class="header">
   <nav class="container">
-    <div class="header_hamburgue" (click)="handleMobileToggle()">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="header_mobile">
+      <div class="header_hamburgue" (click)="handleMobileToggle()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button class="home_button home_button_none roboto_text">
+        <a href="https://wa.me/" target="_blank">Agende agora</a>
+      </button>
     </div>
     <ul
       class="header_links cinzel_title"
       [ngClass]="{ 'header_links_none': !isMobile, 'header_links_visible': isMobile}"
     >
       <li [ngClass]="isSection == 1 ? 'active' : ''" class="header_links_link">
-        <a (click)="scrollToSection($event, 1)" href="#home">Home</a>
+        <a (click)="scrollSection($event, 1)" href="#home">Home</a>
       </li>
       <li [ngClass]="isSection == 2 ? 'active' : ''" class="header_links_link">
-        <a (click)="scrollToSection($event, 2)" href="#sobre">Sobre</a>
+        <a (click)="scrollSection($event, 2)" href="#sobre">Sobre</a>
       </li>
       <li [ngClass]="isSection == 3 ? 'active' : ''" class="header_links_link">
-        <a (click)="scrollToSection($event, 3)" href="#equipe">Equipe</a>
+        <a (click)="scrollSection($event, 3)" href="#equipe">Equipe</a>
       </li>
       <li [ngClass]="isSection == 4 ? 'active' : ''" class="header_links_link">
-        <a (click)="scrollToSection($event, 4)" href="#galeria">Galeria</a>
+        <a (click)="scrollSection($event, 4)" href="#galeria">Galeria</a>
       </li>
       <li [ngClass]="isSection == 5 ? 'active' : ''" class="header_links_link">
-        <a (click)="scrollToSection($event, 5)" href="#faq">FAQ</a>
+        <a (click)="scrollSection($event, 5)" href="#faq">FAQ</a>
       </li>
       <li [ngClass]="isSection == 6 ? 'active' : ''" class="header_links_link">
-        <a (click)="scrollToSection($event, 6)" href="#contato">Contatos</a>
+        <a (click)="scrollSection($event, 6)" href="#contato">Contatos</a>
       </li>
     </ul>
   </nav>

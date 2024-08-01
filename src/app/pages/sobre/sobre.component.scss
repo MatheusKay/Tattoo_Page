@@ -70,3 +70,22 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sobre {
+    margin-top: 5em;
+    flex-direction: column-reverse;
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 3em;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
